@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omni-cognitive-v4-ultra"
+version = "4.0.0"
+description = "Adaptive information-theoretic logits processing for large language model inference"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+dependencies = [
+"torch>=2.1",
+"transformers>=4.40"
+]
+
+[tool.setuptools]
+py-modules = ["omni_cognitive_v4_ultra"]

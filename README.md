@@ -31,8 +31,28 @@ Claims about reducing hallucinations or improving inference performance require 
 
 Installation
 
-Installation instructions will be provided alongside the Python package configuration.
+Requirements
+
+- Python 3.10 or newer
+- PyTorch 2.1 or newer
+- Hugging Face Transformers 4.40 or newer
+
+Install from GitHub
+
+python -m pip install git+https://github.com/yashkumarmishra55-sketch/omni-cognitive-v4-ultra.git
+
+Basic Usage
+
+from omni_cognitive_v4_ultra import create_ultimate_processor
+
+processor = create_ultimate_processor(
+    prompt_len=10,
+    k_min=2,
+    k_max=32,
+)
+
+"prompt_len" must match the length of the input prompt used by your generation workflow.
 
 License
 
-This project is distributed under the Apache License 2.0, as specified in the repository license file.
+This project is distributed under the Apache License 2.0. See the "LICENSE" file for details.
